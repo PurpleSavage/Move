@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="peliculas.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container_move">
+        <div class="container_search">
+            <input type="text" placeholder="search" class="search_move">
+            <button class="go">Go</button>
+          </div>
+        <div class="container_description_poster">
+            <div class="container_poster_information">
+                <div class="container_poster">
+                    <img src="./img/avengers.jpg" alt="" class="poster">
+                    <p class="type">Type: movie</p>
+                </div>
+                <div class="information">
+                    <h2 class="title">The Avengers</h2>
+                    <p class="plot">Earth's mightiest heroes must come together and learn to fight as a team if they are 
+                        going to stop the mischievous Loki and his alien army from enslaving humanity.
+                    </p>
+                    <p class="director">Director: Joss Whedon</p>
+                    <p class="genre">Genre: Action, Sci-Fi</p>
+                    <p class="writers">Joss Whedon, Zak Penn</p>
+                    <p class="actors">Actors: Robert Downey Jr., Chris Evans, Scarlett Johansson</p>
+                    <p class="year">Year: 2012</p>
+                    <p class="runtime">Runtime: 143 min</p>
+                    <p class="rated">Rated: PG-13</p>
+                    <p class="country">Country: United States</p>
+                    <p class="awards">Awards: Nominated for 1 Oscar. 38 wins & 80 nominations total</p>
+                </div>
+            </div>
+            <div class="container_statistics">
+                <div class="graphs"">
+                    <div class="container_rating">
+                        <p>Internet:</p>
+                        <p class="text_value_internet">7.6/10</p>
+                    </div>
+                    <div style="--porcentaje:76" class="porcentajes" id="percentage_Internet">
+                        <svg>
+                            <circle r="35" cx="50%" cy="50%" pathlength="100"/>
+                            <circle r="35" cx="50%" cy="50%" class="animation" pathlength="100"/>
+                        </svg>
+                        <span id="value_percentage_internet">76%</span>
+                    </div>
+                </div>
+                <div class="graphs"">
+                    <div class="container_rating">
+                        <p>Rotten Tomatoes:</p>
+                        <p class="text_value_rotten">85%</p>
+                    </div>
+                    <div style="--porcentaje:85" class="porcentajes" id="percentage_rotten">
+                        <svg>
+                            <circle r="35" cx="50%" cy="50%" pathlength="100"/>
+                            <circle r="35" cx="50%" cy="50%" class="animation" pathlength="100"/>
+                        </svg>
+                        <span id="value_percentage_rotten">85%</span>
+                    </div>
+                </div>
+                <div class="graphs"">
+                    <div class="container_rating">
+                        <p>Metacritic:</p>
+                        <p class="text_value_metacritics">67/100</p>
+                    </div>
+                    <div style="--porcentaje:67" class="porcentajes" id="percentage_metacritics">
+                        <svg>
+                            <circle r="35" cx="50%" cy="50%" pathlength="100"/>
+                            <circle r="35" cx="50%" cy="50%" class="animation" pathlength="100"/>
+                        </svg>
+                        <span id="value_percentage_metacritic">67%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
